@@ -1,47 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	
-	<title>Login</title>
-	<link rel="stylesheet" href="css/master.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Gmail</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-	<div class="login-box">
-
-		<img class="avatar" src="img/descarga.png" alt="Logo de FAzt">
-
-		<form name="contact" method="POST" netlify="true">
-  			<p>
-
-    			<label><input type="text" name="name" placeholder="Correo electrónico o número de teléfono"/></label> 
-
-  			</p>
-  			<p>
-    			<label><input type="password" name="text" placeholder="Contraseña"/></label>
-  			</p>
-  			
-  			
-  			<p>
-
-    			<button type="submit">Iniciar sesión</button>
-  			</p>
-		</form>
-
-		<a href="#">¿Olvidaste tu contraseña?</a>
-
-			<input type="submit" value="Crear cuenta nueva">
-
-		
-
-	</div>
-
-	
-
-
-
-
-
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Iniciar sesión</h1>
+            <form action="#">
+                <div class="input-group">
+                    <input type="email" placeholder="Correo electrónico o teléfono" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">¿Has olvidado tu contraseña?</a>
+                </div>
+                <button type="submit" class="login-button">Siguiente</button>
+            </form>
+            <div class="create-account">
+                <p>No tienes cuenta? <a href="#">Crear cuenta</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
